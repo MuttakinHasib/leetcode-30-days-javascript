@@ -44,7 +44,7 @@ type ReturnObj = {
   reset: () => number;
 };
 
-function createCounter(init: number): ReturnObj {
+function createCounter2(init: number): ReturnObj {
   let value = init;
   return {
     increment: () => ++init,
@@ -53,7 +53,7 @@ function createCounter(init: number): ReturnObj {
   };
 }
 
-const counter = createCounter(5);
+const counter = createCounter2(5);
 
 console.log("🚀 ~ file: counter-ii.ts:17 ~ counter:", counter.increment());
 console.log("🚀 ~ file: counter-ii.ts:17 ~ counter:", counter.increment());
